@@ -1,0 +1,186 @@
+@charset "utf.8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+/* .wrapper{
+  Tira negra de arriba, quitarla */
+  /* background-color: black;
+}  */
+
+.wrapper {
+  position: relative;
+}
+
+
+
+.wrapper::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.conten {
+  background: url("images/Imagen1.jpeg");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: left center; /* La posición se ajusta para mantener la izquierda estática */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  position: relative;
+  max-width: 100%;
+  display: auto;
+  background-attachment: fixed;
+}
+
+
+.nav-area{
+  float: none;
+  text-align: center; /* Alineación al centro en dispositivos móviles */
+  padding: 10px 0; /* Añadir un poco de espacio alrededor de los elementos */
+
+}
+
+.nav-area li{
+  display: block;
+  margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+.nav-area li a{
+  color: #333;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 15px;
+
+}
+
+.nav-area li a:hover{
+ /* background: #fff; */
+  color: #333;
+}
+
+.logo img{
+  width:200px;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4vw;
+}
+
+.welcome-text{
+  /* Arriba | Derecha | Abajo | Izquierda */
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 6vw;
+
+
+}
+
+
+.welcome-text h1{
+  text-align: right;
+  color: #fff;
+  font-size: 5vw; /* Cambiado de píxeles a vw */
+}
+
+
+.welcome-text p{
+  color: #fff;
+  font-size: 2.5vw; /* Cambiado de píxeles a vw */
+}
+
+button {
+  background-color: #ffd256;
+  font-weight: bold;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+#login{
+  border-radius: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+#login:hover{
+  background-color: #ffd256;
+}
+
+@media screen and (max-width: 1283px) {
+  /* Estilos específicos para pantallas más pequeñas */
+
+  .welcome-text h1{
+    font-size: 6vw; /* Cambiado de píxeles a vw */
+  }
+  .welcome-text p{
+    font-size: 3vw; /* Cambiado de píxeles a vw */
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .welcome-text h1{
+    font-size: 7vw; /* Cambiado de píxeles a vw */
+  }
+  .welcome-text p{
+    font-size: 3.5vw; /* Cambiado de píxeles a vw */
+  }
+  .logo img{
+    padding: 7vw;
+  }
+}
+
+
+@media screen and (max-width: 911px){
+  .welcome-text h1{
+    font-size: 7vw; /* Cambiado de píxeles a vw */
+  }
+  .welcome-text p{
+    font-size: 3.5vw; /* Cambiado de píxeles a vw */
+  }
+}
+
+@media screen and (max-width: 861px){
+  .welcome-text h1{
+    font-size: 9vw; /* Cambiado de píxeles a vw */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  }
+  .welcome-text p{
+    font-size: 4.5vw; /* Cambiado de píxeles a vw */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  }
+  .logo img{
+    padding: 9vw;
+  }
+ 
+}
+
+@media screen and (max-width: 680px){
+   .logo img{
+    padding: 11vw;
+  }
+}
+
+@media screen and (max-width: 482px){
+  .welcome-text h1{
+    font-size: 12vw; /* Cambiado de píxeles a vw */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  }
+  .welcome-text p{
+    font-size: 6vw; /* Cambiado de píxeles a vw */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  }
+
+}
